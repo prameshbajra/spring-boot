@@ -1,0 +1,15 @@
+package com.example.expensify.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/")
+public class MyController {
+	
+	@RequestMapping(value = "create-expense", method = RequestMethod.POST)
+	public int createExpense(@RequestBody Expense newExpense) {
+		return 0;
+	}
+}

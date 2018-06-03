@@ -1,0 +1,8 @@
+package com.example.expensify.controller;
+
+@RestController
+@RequestMapping("/")
+public class MyController {
+
+	
+}

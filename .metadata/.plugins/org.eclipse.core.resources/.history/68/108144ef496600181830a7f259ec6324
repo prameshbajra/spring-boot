@@ -1,0 +1,15 @@
+package com.example.expensify.dao;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public interface ExpenseDataDao {
+
+	
+	int createExpense(String expenseTitle, String expenseDescription, String date, String amount);
+
+	int createExpense(String expenseTitle, String expenseDescription, String date, String amount);
+
+	
+
+}

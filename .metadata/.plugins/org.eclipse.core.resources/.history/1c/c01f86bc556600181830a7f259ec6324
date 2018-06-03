@@ -1,0 +1,9 @@
+package com.example.expensify.service;
+
+import com.example.expensify.model.Expense;
+
+public interface ExpenseDataService {
+
+	public int createExpense(Expense newExpense);
+	
+}

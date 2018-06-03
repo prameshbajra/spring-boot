@@ -1,0 +1,21 @@
+package com.example.expensify.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.expensify.dao.ExpenseDataDao;
+import com.example.expensify.model.Expense;
+
+@Service("dataService")
+public class ExpesnseDataServiceImplementation implements ExpenseDataService {
+
+	@Autowired
+	public ExpenseDataDao expenseDataDao;
+
+	@Override
+	public int createExpense(Expense newExpense) {
+		return expenseDataDao.createExpense(newExpense.getExpenseTitle(), newExpense.getExpenseDescription(),
+				newExpense.getDate(), newExpense.getAmount());
+	}
+
+}

@@ -1,0 +1,20 @@
+package com.example.expensify.service;
+
+import java.util.List;
+
+import com.example.expensify.model.Expense;
+
+public interface DataService {
+	
+	public List<Expense> getAllUsers();
+	
+	public Expense getUserById(int id);
+	
+	public int getUserIdByName(String name);
+
+	public int postUserDetails(Expense newUser);
+
+	public int deleteUser(int id);
+
+	public int updateUserDetails(Expense updatedUser, int paramId);
+}

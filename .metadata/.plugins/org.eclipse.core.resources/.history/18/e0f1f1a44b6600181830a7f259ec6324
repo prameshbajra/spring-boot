@@ -1,0 +1,13 @@
+package com.example.expensify.dao;
+
+import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Component;
+
+@Component
+public interface ExpenseDataDao {
+
+	String createExpense = "INSERT INTO expenses(id, \"expenseTitle\", \"expenseDescription\", date, amount) VALUES (3, #{expenseTitle}, #{expenseDescription}, #{date}, #{amount});";
+
+	int createExpense(@Param("expenseTitle") String expenseTitle,@Param("expenseDescription") String expenseDescription, @Param("date")String date, @Param("amount")String amount);
+
+}

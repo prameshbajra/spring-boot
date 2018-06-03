@@ -1,0 +1,10 @@
+package com.example.expensify.model;
+
+public class User {
+
+	private String expenseTite;
+	private String expenseDescription;
+	private String date;
+	private String amount;
+
+}

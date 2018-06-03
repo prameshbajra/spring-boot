@@ -1,0 +1,53 @@
+package com.example.expensify.model;
+
+public class Expense {
+
+	private String expenseTitle;
+	private String expenseDescription;
+	private String date;
+	private String amount;
+
+	public Expense() {
+	}
+
+	public Expense(String expenseTitle, String expenseDescription, String date, String amount) {
+		super();
+		this.expenseTitle = expenseTitle;
+		this.expenseDescription = expenseDescription;
+		this.date = date;
+		this.amount = amount;
+	}
+
+	public String getExpenseTitle() {
+		return expenseTitle;
+	}
+
+	public void setExpenseTitle(String expenseTitle) {
+		this.expenseTitle = expenseTitle;
+	}
+
+	public String getExpenseDescription() {
+		return expenseDescription;
+	}
+
+	public void setExpenseDescription(String expenseDescription) {
+		this.expenseDescription = expenseDescription;
+	}
+
+	public String getDate() {
+		return date;
+	}
+
+	public void setDate(String date) {
+		this.date = date;
+	}
+
+	public String getAmount() {
+		return amount;
+	}
+
+	public void setAmount(String amount) {
+		this.amount = amount;
+	}
+
+}
